@@ -10,14 +10,27 @@ Thank you for your interest in contributing to the GROMACS Ligand Patcher! This 
    cd ligand-patcher
    ```
 
-2. **Install in development mode**
+2. **Create isolated environment (Recommended)**
    ```bash
+   # Option A: Using conda
+   conda env create -f environment.yml
+   conda activate ligand-patcher
+   
+   # Option B: Using venv
+   python -m venv ligand-patcher-dev
+   source ligand-patcher-dev/bin/activate  # On Windows: ligand-patcher-dev\Scripts\activate
    pip install -e .
    ```
 
 3. **Install development dependencies**
    ```bash
    pip install -r requirements.txt
+   ```
+
+4. **Verify installation**
+   ```bash
+   ligand-patcher --version
+   ligand-patcher patch --help
    ```
 
 ## Running Tests

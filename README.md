@@ -20,10 +20,61 @@ This tool simplifies the process of adding ligands to CHARMM-GUI generated membr
 
 ## Installation
 
+### Option 1: Using Conda (Recommended)
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/ligand-patcher.git
+cd ligand-patcher
+
+# Create and activate conda environment
+conda env create -f environment.yml
+conda activate ligand-patcher
+
+# Verify installation
+ligand-patcher --version
+```
+
+### Option 2: Using Python venv
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/ligand-patcher.git
+cd ligand-patcher
+
+# Create and activate virtual environment
+python -m venv ligand-patcher-env
+source ligand-patcher-env/bin/activate  # On Windows: ligand-patcher-env\Scripts\activate
+
+# Install the package
+pip install -e .
+
+# Verify installation
+ligand-patcher --version
+```
+
+### Option 3: Direct pip install
+
 ```bash
 git clone https://github.com/yourusername/ligand-patcher.git
 cd ligand-patcher
 pip install -e .
+```
+
+### Testing Installation
+
+After installation, verify everything works correctly:
+
+```bash
+# Test the CLI
+ligand-patcher --version
+ligand-patcher --help
+
+# Run comprehensive installation tests
+python test_installation.py
+
+# Test with your own data (dry run)
+ligand-patcher patch your-system-dir your-ligand-dir --dry-run --verbose
 ```
 
 ## Usage
