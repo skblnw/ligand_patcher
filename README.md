@@ -117,6 +117,14 @@ The tool performs three automated steps:
 - Configures `-DPOSRES_LIGAND -DPOSRES_FC_LIGAND=1000.0`
 - Maintains existing system restraints
 
+### ⚠️ Important Validation Notes
+
+**Always validate the output before running MD simulations:**
+
+- **Ligand Positioning**: The ligand coordinates depend entirely on your input file preparation. Verify the ligand position, orientation, and potential clashes with the system before proceeding.
+
+- **Restraint Configuration**: Ligand restraints may be missing even if the simulation runs without errors. This depends on whether restraint definitions were included in your ligand input files. Check that appropriate restraints are applied during equilibration.
+
 ## Usage Examples
 
 ### Command Line Interface
