@@ -1,0 +1,24 @@
+# Include documentation and configuration files
+include README.md
+include LICENSE
+include CONTRIBUTING.md
+include CLAUDE.md
+include environment.yml
+include pyproject.toml
+include requirements.txt
+
+# Include test and example files
+recursive-include tests *.py
+recursive-include examples *.py
+
+# Include scripts
+include quick_test.sh
+include test_installation.py
+
+# Exclude development and build artifacts
+prune ligand_patcher.egg-info
+prune build
+prune dist
+global-exclude __pycache__
+global-exclude *.py[co]
+global-exclude .DS_Store

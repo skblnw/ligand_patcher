@@ -102,8 +102,8 @@ def main():
         tests_passed += 1
     
     # Test 6: Dry run with test data (if available)
-    test_system_dir = "system-charmm-gui-5442443097"
-    test_ligand_dir = "ligand-charmm-gui-5442431562"
+    test_system_dir = "test_data/system-charmm-gui-5442443097"
+    test_ligand_dir = "test_data/ligand-charmm-gui-5442431562"
     
     if os.path.exists(test_system_dir) and os.path.exists(test_ligand_dir):
         cmd = f"ligand-patcher patch {test_system_dir} {test_ligand_dir} --dry-run"

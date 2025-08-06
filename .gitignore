@@ -26,6 +26,8 @@ MANIFEST
 .coverage
 htmlcov/
 .tox/
+temp_test_env/
+*-test-env/
 
 # Environments
 .env
@@ -52,26 +54,22 @@ venv.bak/
 ehthumbs.db
 Thumbs.db
 
-# CHARMM-GUI directories (examples)
+# Test data (keep in test_data/ directory but don't track changes)
+test_data/
 system-charmm-gui-*/
 ligand-charmm-gui-*/
 patched_system/
+*_patched/
 
 # Backup files
 *.backup
 
-# Molecular simulation files
-*.gro
-*.top
-*.itp
-*.mdp
-*.ndx
-*.pdb
-*.psf
-*.crd
-*.str
-*.yml
-*.yaml
+# Molecular simulation files (generated during testing)
 *.log
-*.out
 *.err
+**/step*.gro
+**/step*.pdb
+**/step*.crd
+**/topol.top.backup
+**/step*.mdp.backup
+temp_*

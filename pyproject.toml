@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools-scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ligand-patcher"
+version = "1.0.0"
+description = "A tool to patch CHARMM-GUI membrane protein systems with ligands for GROMACS"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "GROMACS MD Expert", email = "expert@example.com"},
+]
+maintainers = [
+    {name = "TXY", email = "txy@example.com"},
+]
+keywords = ["gromacs", "charmm-gui", "molecular-dynamics", "ligand", "membrane-protein"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research", 
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Physics",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov",
+    "black",
+    "flake8",
+]
+
+[project.scripts]
+ligand-patcher = "ligand_patcher.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/ligand-patcher"
+Repository = "https://github.com/yourusername/ligand-patcher"
+Issues = "https://github.com/yourusername/ligand-patcher/issues"
+Documentation = "https://github.com/yourusername/ligand-patcher#readme"
+
+[tool.setuptools]
+packages = ["ligand_patcher"]
+
+[tool.setuptools.package-data]
+ligand_patcher = ["*.md"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]

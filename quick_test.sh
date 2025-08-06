@@ -19,9 +19,9 @@ echo "Testing installation..."
 ligand-patcher --version
 echo ""
 
-if [ -d "system-charmm-gui-5442443097" ] && [ -d "ligand-charmm-gui-5442431562" ]; then
+if [ -d "test_data/system-charmm-gui-5442443097" ] && [ -d "test_data/ligand-charmm-gui-5442431562" ]; then
     echo "Running dry-run test with sample data..."
-    ligand-patcher patch system-charmm-gui-5442443097 ligand-charmm-gui-5442431562 --dry-run 2>&1 | grep -E "(INFO|SUCCESS|✓)"
+    ligand-patcher patch test_data/system-charmm-gui-5442443097 test_data/ligand-charmm-gui-5442431562 --dry-run 2>&1 | grep -E "(INFO|SUCCESS|✓)"
     echo ""
 fi
 
