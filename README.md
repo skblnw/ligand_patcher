@@ -35,7 +35,7 @@ A streamlined Python tool for integrating ligands into CHARMM-GUI generated memb
 #### Option 1: Using Conda (Recommended)
 
 ```bash
-git clone https://github.com/yourusername/ligand-patcher.git
+git clone https://github.com/skblnw/ligand-patcher.git
 cd ligand-patcher
 conda env create -f environment.yml
 conda activate ligand-patcher
@@ -45,7 +45,7 @@ ligand-patcher --version
 #### Option 2: Using Python venv
 
 ```bash
-git clone https://github.com/yourusername/ligand-patcher.git
+git clone https://github.com/skblnw/ligand-patcher.git
 cd ligand-patcher
 python -m venv ligand-patcher-env
 source ligand-patcher-env/bin/activate  # Windows: ligand-patcher-env\Scripts\activate
@@ -205,7 +205,7 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 ### Development Setup
 
 ```bash
-git clone https://github.com/yourusername/ligand-patcher.git
+git clone https://github.com/skblnw/ligand-patcher.git
 cd ligand-patcher
 conda env create -f environment.yml
 conda activate ligand-patcher
@@ -224,7 +224,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Support
 
-- **Issues**: [GitHub Issue Tracker](https://github.com/yourusername/ligand-patcher/issues)
+- **Issues**: [GitHub Issue Tracker](https://github.com/skblnw/ligand-patcher/issues)
 - **Documentation**: See example files in `examples/`
 - **Testing**: Comprehensive test suite included
 
