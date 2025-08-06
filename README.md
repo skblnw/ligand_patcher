@@ -135,6 +135,6 @@ For issues and questions, please use the GitHub issue tracker.
 
 ## Acknowledgement
 
-Xi'an Jiaotong-Liverpool University (XJTLU) Summer Undergraduate Research Fellowship (SURF) Codes: 1335, 1415
+Xi'an Jiaotong-Liverpool University (XJTLU) Summer Undergraduate Research Fellowship (SURF) code:1335,1415
 
 Initiates: TXY
